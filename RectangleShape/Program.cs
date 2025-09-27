@@ -30,7 +30,7 @@ namespace RectangleShape {
         }
 
         static void Main(string[] args) {
-            Conso.Write("Application Development");
+            Console.Write("Application Development");
             Console.Write("Enter the length of the rectangle: ");
             double userLength = Convert.ToDouble(Console.ReadLine());
 
