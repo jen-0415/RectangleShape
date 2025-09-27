@@ -18,10 +18,15 @@ namespace RectangleShape {
             return Length * Width;
         }
 
+        public double GetPerimeter() {
+            return 2 * (Length + Width);
+        }
+
         public void Display() {
             Console.WriteLine($"\nLength: {Length}");
             Console.WriteLine($"Width: {Width}");
             Console.WriteLine($"Area: {GetArea()}");
+            Console.WriteLine($"Perimeter: {GetPerimeter()}");
         }
 
         static void Main(string[] args) {
