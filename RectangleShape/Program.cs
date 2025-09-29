@@ -3,6 +3,7 @@ using System;
 
 namespace RectangleShape {
     class Rectangle {
+        
         public double Length { get; set; }
         public double Width { get; set; }
 
@@ -22,15 +23,19 @@ namespace RectangleShape {
             return 2 * (Length + Width);
         }
 
+        public bool IsSquare() {
+            return Length == Width;
+        }
         public void Display() {
             Console.WriteLine($"\nLength: {Length}");
             Console.WriteLine($"Width: {Width}");
             Console.WriteLine($"Area: {GetArea()}");
             Console.WriteLine($"Perimeter: {GetPerimeter()}");
+            Console.WriteLine(IsSquare() ? "The rectangle is a square." : "The rectangle is not a square.");
         }
 
         static void Main(string[] args) {
-            Console.Write("Application Development");
+            Console.Write("Application Development Activity 1\n");
             Console.Write("Enter the length of the rectangle: ");
             double userLength = Convert.ToDouble(Console.ReadLine());
 
